@@ -10,6 +10,7 @@
 	"module": "./dist/main.js",
 	"types": "./dist/main.d.ts",
 	"scripts": {
+		"dev": "vite",
 		"build": "tsc && vite build",
 		"lint": "eslint . --ext ts,tsx",
 		"lint:fix": "eslint . --ext ts,tsx --fix",
