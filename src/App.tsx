@@ -1,10 +1,10 @@
 import styles from './App.module.css'
-import { FlightBooker } from './components/FlightBooker'
+import { ControlBar } from './components/ControlBar'
 
 const App = () => {
   return (
     <div className={styles.app}>
-      <FlightBooker />
+      <ControlBar />
     </div>
   )
 }
