@@ -1,12 +1,39 @@
-import styles from './App.module.css'
-import { FlightBooker } from './components/FlightBooker'
+import styles from "./App.module.css";
+import { ImageCarousel } from "./components/ImageCarousel/ImageCarousel";
+
+const images = [
+	{
+		src: "https://picsum.photos/id/600/600/400",
+		alt: "Forest",
+	},
+	{
+		src: "https://picsum.photos/id/100/600/400",
+		alt: "Beach",
+	},
+	{
+		src: "https://picsum.photos/id/200/600/400",
+		alt: "Yak",
+	},
+	{
+		src: "https://picsum.photos/id/300/600/400",
+		alt: "Hay",
+	},
+	{
+		src: "https://picsum.photos/id/400/600/400",
+		alt: "Plants",
+	},
+	{
+		src: "https://picsum.photos/id/500/600/400",
+		alt: "Building",
+	},
+];
 
 const App = () => {
-  return (
-    <div className={styles.app}>
-      <FlightBooker />
-    </div>
-  )
-}
+	return (
+		<div className={styles.app}>
+			<ImageCarousel images={images} />
+		</div>
+	);
+};
 
-export default App
+export default App;

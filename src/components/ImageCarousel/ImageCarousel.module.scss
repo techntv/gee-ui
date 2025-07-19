@@ -1,0 +1,72 @@
+.imageCarousel{
+    background-color: #000;
+    height: 400px;
+    overflow: hidden;
+    width: min(600px, 100vw);
+    position: relative;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.button{
+    --size: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: var(--size);
+    height: var(--size);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.buttonNext{
+    right: 0;
+}
+
+.buttonPrevious{
+    left: 0;
+}
+
+.pages{
+    --dimension: 10px;
+    position: absolute;
+    bottom: var(--dimension);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: var(--dimension);
+    z-index: 10;
+    background-color: #0008;
+    padding: var(--dimension);
+    border-radius: 12px;
+}
+
+.page{
+    --dimension: 10px;
+    width: var(--dimension);
+    height: var(--dimension);
+    border-radius: 100%;
+    background-color: #666;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pageActive{
+    background-color: #fff;
+}
